@@ -1,0 +1,5 @@
+[target.x86_64-micro-kernel-rs]
+linker = "rust-lld"
+rustflags = [
+  "-C", "link-arg=src/boot.o",
+]
