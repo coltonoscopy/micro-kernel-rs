@@ -2,4 +2,14 @@
 linker = "rust-lld"
 rustflags = [
   "-C", "link-arg=src/boot.o",
+  "-C", "link-args=-e _start",
+]
+
+[target.i686-micro-kernel-rs]
+linker = "rust-lld"
+rustflags = [
+  "-C", "link-arg=-Tlink.ld",
+  "-C", "link-arg=src/boot.o",
+  "-C", "link-args=-e _start",
+  "-C", "link-arg=-v",
 ]

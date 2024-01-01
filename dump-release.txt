@@ -1,0 +1,98 @@
+
+target\x86_64-micro-kernel-rs\release\micro-kernel-rs:	file format elf64-x86-64
+
+Disassembly of section .comment:
+
+0000000000000000 <.comment>:
+       0: 00 72 75                     	addb	%dh, 0x75(%rdx)
+       3: 73 74                        	jae	0x79 <.comment+0x79>
+       5: 63 20                        	movslq	(%rax), %esp
+       7: 76 65                        	jbe	0x6e <.comment+0x6e>
+       9: 72 73                        	jb	0x7e <.comment+0x7e>
+       b: 69 6f 6e 20 31 2e 37         	imull	$0x372e3120, 0x6e(%rdi), %ebp # imm = 0x372E3120
+      12: 36 2e 30 2d 6e 69 67 68      	xorb	%ch, %cs:0x6867696e(%rip)
+      1a: 74 6c                        	je	0x88 <.comment+0x88>
+      1c: 79 20                        	jns	0x3e <.comment+0x3e>
+      1e: 28 66 37                     	subb	%ah, 0x37(%rsi)
+      21: 30 34 66                     	xorb	%dh, (%rsi,%riz,2)
+      24: 33 62 39                     	xorl	0x39(%rdx), %esp
+      27: 33 20                        	xorl	(%rax), %esp
+      29: 32 30                        	xorb	(%rax), %dh
+      2b: 32 33                        	xorb	(%rbx), %dh
+      2d: 2d 31 32 2d 31               	subl	$0x312d3231, %eax       # imm = 0x312D3231
+      32: 39 29                        	cmpl	%ebp, (%rcx)
+      34: 00 4c 69 6e                  	addb	%cl, 0x6e(%rcx,%rbp,2)
+      38: 6b 65 72 3a                  	imull	$0x3a, 0x72(%rbp), %esp
+      3c: 20 4c 4c 44                  	andb	%cl, 0x44(%rsp,%rcx,2)
+      40: 20 31                        	andb	%dh, (%rcx)
+      42: 37                           	<unknown>
+      43: 2e 30 2e                     	xorb	%ch, %cs:(%rsi)
+      46: 36 00                        	<unknown>
+
+Disassembly of section .symtab:
+
+0000000000000000 <.symtab>:
+		...
+      18: 01 00                        	addl	%eax, (%rax)
+      1a: 00 00                        	addb	%al, (%rax)
+      1c: 04 00                        	addb	$0x0, %al
+      1e: f1                           	<unknown>
+      1f: ff 00                        	incl	(%rax)
+		...
+      2d: 00 00                        	addb	%al, (%rax)
+      2f: 00 28                        	addb	%ch, (%rax)
+      31: 00 00                        	addb	%al, (%rax)
+      33: 00 04 00                     	addb	%al, (%rax,%rax)
+      36: f1                           	<unknown>
+      37: ff 00                        	incl	(%rax)
+		...
+      45: 00 00                        	addb	%al, (%rax)
+      47: 00                           	<unknown>
+
+Disassembly of section .shstrtab:
+
+0000000000000000 <.shstrtab>:
+       0: 00 2e                        	addb	%ch, (%rsi)
+       2: 63 6f 6d                     	movslq	0x6d(%rdi), %ebp
+       5: 6d                           	insl	%dx, %es:(%rdi)
+       6: 65 6e                        	outsb	%gs:(%rsi), %dx
+       8: 74 00                        	je	0xa <.symtab+0xa>
+       a: 2e 73 79                     	jae	0x86 <.symtab+0x86>
+       d: 6d                           	insl	%dx, %es:(%rdi)
+       e: 74 61                        	je	0x71 <.symtab+0x71>
+      10: 62 00 2e 73                  	<unknown>
+      14: 68 73 74 72 74               	pushq	$0x74727473             # imm = 0x74727473
+      19: 61                           	<unknown>
+      1a: 62 00 2e 73                  	<unknown>
+      1e: 74 72                        	je	0x92 <.symtab+0x92>
+      20: 74 61                        	je	0x83 <.symtab+0x83>
+      22: 62 00                        	<unknown>
+
+Disassembly of section .strtab:
+
+0000000000000000 <.strtab>:
+       0: 00 6d 69                     	addb	%ch, 0x69(%rbp)
+       3: 63 72 6f                     	movslq	0x6f(%rdx), %esi
+       6: 5f                           	popq	%rdi
+       7: 6b 65 72 6e                  	imull	$0x6e, 0x72(%rbp), %esp
+       b: 65 6c                        	insb	%dx, %es:(%rdi)
+       d: 5f                           	popq	%rdi
+       e: 72 73                        	jb	0x83 <.symtab+0x83>
+      10: 2e 62                        	<unknown>
+      12: 30 33                        	xorb	%dh, (%rbx)
+      14: 34 36                        	xorb	$0x36, %al
+      16: 35 62 33 38 61               	xorl	$0x61383362, %eax       # imm = 0x61383362
+      1b: 37                           	<unknown>
+      1c: 31 61 34                     	xorl	%esp, 0x34(%rcx)
+      1f: 65 37                        	<unknown>
+      21: 2d 63 67 75 2e               	subl	$0x2e756763, %eax       # imm = 0x2E756763
+      26: 30 00                        	xorb	%al, (%rax)
+      28: 73 72                        	jae	0x9c <.symtab+0x9c>
+      2a: 63 2f                        	movslq	(%rdi), %ebp
+      2c: 62                           	<unknown>
+      2d: 6f                           	outsl	(%rsi), %dx
+      2e: 6f                           	outsl	(%rsi), %dx
+      2f: 74 2e                        	je	0x5f <.symtab+0x5f>
+      31: 61                           	<unknown>
+      32: 73 6d                        	jae	0xa1 <.symtab+0xa1>
+      34: 00                           	<unknown>
